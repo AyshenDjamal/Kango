@@ -2,20 +2,20 @@ package Kango;
 
 //superClass
 public class Employees {
-    protected String nameSurname;
-    private int age;
-    public String profession;
-    protected String location;
+    protected static String nameSurname;
+    private  static int age;
+    public static String profession;
+    protected static String location;
 
 
     protected Employees(String nameSurname, int age, String profession, String location) {
-        this.nameSurname = nameSurname;
-        this.age = age;
-        this.profession = profession;
-        this.location = location;
+        nameSurname = nameSurname;
+        age = age;
+        profession = profession;
+        location = location;
     }
 
-    protected void info() {
+    protected static void info() {
         System.out.println("Name and Surname: " + nameSurname + "\nAge: " + age +  "\nProfession: " + profession + "\nLocation: " + location);
     }
 
